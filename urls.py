@@ -2,6 +2,7 @@ from Handlers import admin_handler, index_handler
 # from Handlers.category__handler import CategoryHandler,CategoryEditHandler,CategoryDeleteHandler,CategoryNewHandler
 
 urlList  = [
+    456
     (r'/admin', admin_handler.admin_Handler),
     (r'/', index_handler.index_Handler),
     (r'/register', index_handler.register_Handler),
