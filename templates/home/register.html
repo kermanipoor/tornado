@@ -102,10 +102,10 @@
                     data: formData,
                     async: false,
                     cache: false,
-                    contentType: false,
+                     contentType: false,F:\45\StudentExpenses
                     processData: false,
 
-                    success: function (data) {
+                    success:function (data) {
 						if(data['msg'] == 'success'){
 							$("#form_register")[0].reset();
                             swal({
@@ -113,11 +113,11 @@
                               text: "ثبت نام با موفقیت انجام شد",
                               imageUrl: '{{static_url("Admin/img/thumbs-up.jpg")}}'
                             });
-						}
+						};
                         else{
 							swal(data['msg'])
 						}
-                    },
+                    }
 
                     error: function () {
 
